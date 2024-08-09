@@ -9,6 +9,14 @@
     </head>
 
     <body>
+        <div class="extras_buttons">
+            <h3>Disable sounds</h3>
+            <label class="switch">
+                <input id="disable_sounds" type="checkbox">
+                <span class="slider"></span>
+            </label>
+        </div>
+
         <div class="calculator">
             <div class="sup">
                 <div class="titles">
@@ -28,30 +36,30 @@
             </div>
             <div class="buttons">
                 <div class="line1">
-                    <button id="seven">7</button>
-                    <button id="eight">8</button>
-                    <button id="nine">9</button>
-                    <button id="del">DEL</button>
-                    <button id="ac">AC</button>
+                    <button onfocus="audio.play();" id="seven">7</button>
+                    <button onclick="audio.play();" id="eight">8</button>
+                    <button onclick="audio.play();" id="nine">9</button>
+                    <button onclick="audio.play();" id="del">DEL</button>
+                    <button onclick="audio.play();" id="ac">AC</button>
                 </div>
                 <div class="line2">
-                    <button id="four">4</button>
-                    <button id="five">5</button>
-                    <button id="six">6</button>
-                    <button id="multiply">×</button>
-                    <button id="divide">÷</button>
+                    <button onclick="audio.play();" id="four">4</button>
+                    <button onclick="audio.play();" id="five">5</button>
+                    <button onclick="audio.play();" id="six">6</button>
+                    <button onclick="audio.play();" id="multiply">×</button>
+                    <button onclick="audio.play();" id="divide">÷</button>
                 </div>
                 <div class="line3">
-                    <button id="one">1</button>
-                    <button id="two">2</button>
-                    <button id="three">3</button>
-                    <button id="add">+</button>
-                    <button id="sub">-</button>
+                    <button onclick="audio.play();" id="one">1</button>
+                    <button onclick="audio.play();" id="two">2</button>
+                    <button onclick="audio.play();" id="three">3</button>
+                    <button onclick="audio.play();" id="add">+</button>
+                    <button onclick="audio.play();" id="sub">-</button>
                 </div>
                 <div class="line4">
-                    <button id="zero">0</button>
-                    <button id="dot">.</button>
-                    <button id="equal">=</button>
+                    <button onclick="audio.play();" id="zero">0</button>
+                    <button onclick="audio.play();" id="dot">.</button>
+                    <button onclick="audio.play();" id="equal">=</button>
                 </div>
             </div>
         </div>

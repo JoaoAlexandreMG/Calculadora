@@ -1,6 +1,7 @@
 
 var resultado = '';
 var multiplicando, dividindo, somando, subtraindo;
+var mutado = false;
 
 
 document.getElementById('zero').addEventListener('click', function () {
@@ -44,7 +45,18 @@ document.getElementById('ac').addEventListener('click', function () {
     document.getElementById('display').value = '';
     resultado = '';
 });
+var audio = new Audio("click.mp3");
+var mutado = false;
 
+document.getElementById('disable_sounds').addEventListener('change', function () {
+    mutado = document.getElementById("disable_sounds").checked;
+
+    if (mutado) {
+        audio = null;
+    } else {
+        audio = new Audio("click.mp3");
+    }
+});
 document.getElementById('multiply').addEventListener('click', function () {
     display = parseNumber(document.getElementById('display').value);
     if (resultado != '' && multiplicando) {
