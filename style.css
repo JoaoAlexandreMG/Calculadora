@@ -295,6 +295,27 @@ body {
 
     .extras_buttons {
         margin-bottom: 12px;
+        height: 10%;
+        margin-top: 1%;
+    }
+
+    .calculator {
+        height: 90%;
+        width: 90%;
+        margin-bottom: 2%;
+    }
+
+    #equal {
+        border-bottom-right-radius: 15px !important;
+        font-size: 400%;
+    }
+
+}
+
+@media (max-width: 400px) {
+    #equal {
+        border-bottom-right-radius: 15px !important;
+        font-size: 500%;
     }
 
 }
